@@ -1,0 +1,179 @@
+/* Define um estilo padrão para resetar as margens, preenchimentos e o modelo de caixa para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define estilos para a classe 'logo' */
+.logo {
+    margin-right: 5vw;
+    max-width: 250px;
+    height: 90px;
+    width: max-content;
+}
+
+/* Define estilos para o cabeçalho da página */
+header {
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* Define estilos para os botões de login e cadastrar */
+.login,
+.cadastrar {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* Define estilos para a navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Define estilos para os links dentro da navegação */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-flex;
+}
+
+
+
+/* Define estilos para os links na navegação durante o hover */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Define estilos para botões genéricos */
+button {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+}
+
+.h1 {
+    text-align: center;
+    text-size-adjust: 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+body{
+    font-family: Arial, sans-serif;
+            text-align: justify;
+            line-height: 2.0; /* Espaçamento entre as linhas */
+}
+
+form{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+   
+  
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2, h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+.footer {
+    background-color: #663399;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-social h3 {
+    color: #fff;
+}
+
+.footer-info p {
+    color: #ffffff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #fff;
+}
+    

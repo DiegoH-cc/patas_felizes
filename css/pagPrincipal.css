@@ -1,0 +1,190 @@
+/* Define um estilo padrão para resetar as margens, preenchimentos e o modelo de caixa para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define estilos para a classe 'logo' */
+.logo {
+    margin-right: 5vw;
+    max-width: 250px;
+    height: 90px;
+    width: max-content;
+}
+
+/* Define estilos para o cabeçalho da página */
+header {
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* Define estilos para os botões de login e cadastrar */
+.login,
+.cadastrar {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* Define estilos para a navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Define estilos para os links dentro da navegação */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-flex;
+}
+
+
+
+/* Define estilos para os links na navegação durante o hover */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Define estilos para botões genéricos */
+button {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+}
+
+
+
+.destaque {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destaque h1 {
+    color: #333;
+}
+
+.destaque p {
+    color: #555;
+}
+
+.bichinhos {
+    background-color: #e6e6e6;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.bichinhos h2 {
+    color: #333;
+}
+
+.bichinhos-img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.sobre {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.sobre h2 {
+    color: #333;
+}
+
+
+
+#carrosel {
+    width: 50%; /* Defina a largura desejada para o carrossel */
+    margin: 0 auto; /* Centralizar o carrossel na página */
+}
+
+#carrosel img {
+    max-width: 100%; /* Garantir que a imagem não ultrapasse a largura do contêiner pai */
+    height: auto; /* Manter a proporção original da imagem */
+    display: block; /* Remover espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centralizar a imagem no contêiner pai */
+}
+/* Estilos gerais para o footer */
+.footer {
+    background-color: #663399;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-social h3 {
+    color: #fff;
+}
+
+.footer-info p {
+    color: #ffffff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #fff;
+}
+    

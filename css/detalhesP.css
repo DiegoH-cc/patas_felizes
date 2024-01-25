@@ -1,0 +1,125 @@
+/* Define um estilo padrão para resetar as margens, preenchimentos e o modelo de caixa para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define estilos para a classe 'logo' */
+.logo {
+    margin-right: 5vw;
+    max-width: 250px;
+    height: 90px;
+    width: max-content;
+}
+
+/* Define estilos para o cabeçalho da página */
+header {
+    background-color: #663399;
+    color: #fff;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* Define estilos para os botões de login e cadastrar */
+.login,
+.cadastrar {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* Define estilos para a navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Define estilos para os links dentro da navegação */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-flex;
+}
+
+
+
+/* Define estilos para os links na navegação durante o hover */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Define estilos para botões genéricos */
+button {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+}
+
+
+.title-lg {
+    text-align: center;
+    color: #333;
+}
+
+.custom-rect {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    text-align: center;
+    
+}
+
+img {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    max-width: none; /* Remova a limitação da largura máxima */
+    height: 500px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #51dfcc;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4595a0;
+}

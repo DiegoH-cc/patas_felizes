@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Animal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Link para FontAwesome -->
+    <link rel="stylesheet" href="css/cadAnimal.css">
+    <link rel="shortcut icon" href="imgLogos/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="data_form">
+        <div class="image_div"><img
+            src="imgLogos/gatinho_cachorrinho.jpeg"
+            alt="">
+        </div>
+        <div class="form_main">
+    <form id="cadastroForm" action="processaCadastro.php" method="post" enctype="multipart/form-data">
+        <h2>Cadastrar Novo Animal</h2>
+        
+        <label for="nomePessoa"><i class="fas fa-user"></i> Nome do Responsavel:</label>
+        <input type="text" id="nomePessoa" name="nomePessoa" required><br>
+
+        <label for="Contato"><i class="fas fa-phone"></i> Coloque um Contato:</label>
+        <input type="text" id="Contato" name="Contato" required><br>
+
+        <label for="nomeAnimal"><i class="fas fa-paw"></i> Nome do Animal:</label>
+        <input type="text" id="nomeAnimal" name="nomeAnimal" required><br>
+        
+        <label for="especie"><i class="fas fa-paw"></i> Espécie:</label>
+        <select id="especie" name="especie">
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+        </select><br>
+
+        <label for="sexo"><i class="fas fa-venus-mars"></i> Sexo:</label>
+        <select id="sexo" name="sexo">
+            <option value="macho">Macho</option>
+            <option value="femea">Fêmea</option>
+        </select><br>
+
+        <label for="porte"><i class="fas fa-arrows-alt"></i> Porte:</label>
+        <select id="porte" name="porte">
+            <option value="pequeno">Porte pequeno</option>
+            <option value="medio">Porte médio</option>
+            <option value="grande">Porte grande</option>
+        </select><br>
+
+        <label for="descricao"><i class="fas fa-align-left"></i> Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" cols="50" placeholder="Descreva o animal..."></textarea><br>
+
+        <label for="imagem"><i class="fas fa-image"></i> Imagem:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*"><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+    
+  </div>
+</div>
+
+    
+    <script src="buttons.js"></script>
+</body>
+</html>

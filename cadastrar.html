@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="imgLogos/favicon.png" type="image/x-icon">
+    <head>
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  
+</head>
+<body>
+    <div class="data_form">
+        <div class="image_div"><img
+            src="imgLogos/doguinho_gatinho.jpeg"
+            alt="">
+        </div>
+  
+        <div class="form_main">
+          <div class="heading">Cadastro de Usuário</div>
+          <form action="cadastrarUsuario.php" method="post">
+          <div class="inputContainer">
+            
+
+            <span class="inputIcon">🔒</span>
+            <input type="text" class="inputField" placeholder="Nome de usuário" name="nome" id="nome" required>
+          </div>
+          <div class="inputContainer">
+            <span class="inputIcon">📧</span>
+            <input type="email" class="inputField" placeholder="E-mail" name="email" id="email" required>
+          </div>
+          <div class="inputContainer">
+            <span class="inputIcon">🔑</span>
+            <input type="password" class="inputField" placeholder="Senha" name="senha" id="senha" required>
+          </div>
+
+          <div class="inputContainer">
+            <span class="inputIcon"><i class="fas fa-phone"></i></span>
+            <input class="inputField" type="text" name="telefone" id="telefone" required placeholder="(31) 99999-9999">
+        </div>
+        
+          <button id="button" type="submit" value="Cadastrar">Cadastrar</button>
+        </form>
+        <button class="voltar" onclick="voltar()">Voltar</button>
+      </div>
+    </div>
+-
+    <script src="buttons.js"></script>
+</body>
+</html>

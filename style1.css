@@ -1,0 +1,140 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.form_main {
+  width: 100%;
+  max-width: 35%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  background-color: rgb(255, 255, 255);
+  padding: 10vh 5vw 10vh 2vw;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.062);
+  position: relative;
+  overflow: hidden;
+}
+
+.form_main::before {
+  position: absolute;
+  content: "";
+  width: 20vw;
+  height: 20vw;
+  background-color: rgb(209, 193, 255);
+  transform: rotate(45deg);
+  left: -10vw;
+  bottom: 2vw;
+  z-index: 1;
+  border-radius: 2vw;
+  box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.082);
+}
+
+.heading {
+  font-size: 2em;
+  color: #2e2e2e;
+  font-weight: 700;
+  margin: 50px 0 20px 0;
+  z-index: 2;
+  text-align: center;
+}
+
+.inputContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.inputIcon {
+  position: relative;
+  left: 3px;
+}
+
+.inputField {
+  width: 200%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(173, 173, 173);
+  margin: 10px 0;
+  color: black;
+  font-size: .8em;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.inputField:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(199, 114, 255);
+}
+
+.inputField::placeholder {
+  color: rgb(80, 80, 80);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#button {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  border: none;
+  background-color: rgb(162, 104, 255);
+  height: 20px;
+  color: white;
+  font-size: .8em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: rgb(126, 84, 255);
+}
+
+.data_form {
+  display: flex;
+}
+
+.image_div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden; /* Impede que a imagem ultrapasse a altura da tela */
+}
+
+.image_div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#button,
+.voltar {
+  width: 100%;
+  max-width: 200px;
+  /* Ajuste a largura máxima conforme desejado */
+  border: none;
+  background-color: rgb(162, 104, 255);
+  height: 30px;
+  color: white;
+  font-size: .8em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 10px auto;
+  /* Centralize o botão horizontalmente */
+  cursor: pointer;
+}
+
+#button:hover,
+.voltar:hover {
+  background-color: rgb(126, 84, 255);
+}
